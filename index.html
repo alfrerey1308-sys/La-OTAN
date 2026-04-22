@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Información sobre la OTAN</title>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+     <div class="container">
+         <header>
+             <h1>OTAN</h1>
+             <p class="subtitulo">Organización del Tratado del Atlántico Norte</p>
+         </header>
+         <section class="contenido">
+             <div class="info-card">
+                 <h2>¿Qué es la OTAN?</h2>
+                 <p>Es una alianza militar intergubernamental fundada en 1949 con el objetivo de garantizar la seguridad de sus miembros mediante medios políticos y militares.</p>
+             </div>
+             <div class="info-card">
+                 <h2>Objetivo Principal</h2>
+                 <p>Proteger la libertad y la seguridad de los países miembros. Se basa en el principio de <strong>seguridad colectiva</strong>: un ataque contra uno se considera un ataque contra todos.</p>
+             </div>
+             <div class="info-card">
+                 <h2>Miembros Actuales</h2>
+                 <p>Actualmente cuenta con <span id="contador" class="numero">32</span> países miembros.</p>
+                 <button onclick="aumentarMiembro()">Agregar País Ficticio</button>
+             </div>
+         </section>
+         <!-- SECCIÓN DEL CUESTIONARIO -->
+         <section class="quiz-section">
+             <h2>📝 Cuestionario sobre la OTAN</h2>
+             <div class="pregunta">
+                 <p><strong>1. ¿En qué año se fundó la OTAN?</strong></p>
+                 <button class="opcion" onclick="verificarRespuesta(this, 1, false)">1939</button>
+                 <button class="opcion" onclick="verificarRespuesta(this, 1, true)">1949</button>
+                 <button class="opcion" onclick="verificarRespuesta(this, 1, false)">1955</button>
+                 <div id="resultado1" class="resultado"></div>
+             </div>
+             <div class="pregunta">
+                 <p><strong>2. ¿Cuál es el principio fundamental de la OTAN?</strong></p>
+                 <button class="opcion" onclick="verificarRespuesta(this, 2, false)">La invasión militar</button>
+                 <button class="opcion" onclick="verificarRespuesta(this, 2, true)">Seguridad colectiva</button>
+                 <button class="opcion" onclick="verificarRespuesta(this, 2, false)">Comercio internacional</button>
+                 <div id="resultado2" class="resultado"></div>
+             </div>
+             <div class="pregunta">
+                 <p><strong>3. ¿Qué organización rival surgió durante la Guerra Fría?</strong></p>
+                 <button class="opcion" onclick="verificarRespuesta(this, 3, false)">La ONU</button>
+                 <button class="opcion" onclick="verificarRespuesta(this, 3, false)">La UE</button>
+                 <button class="opcion" onclick="verificarRespuesta(this, 3, true)">Pacto de Varsovia</button>
+                 <div id="resultado3" class="resultado"></div>
+             </div>
+             <div class="pregunta">
+                 <p><strong>4. ¿Qué significa OTAN?</strong></p>
+                 <button class="opcion" onclick="verificarRespuesta(this, 4, true)">Organización del Tratado del Atlántico Norte</button>
+                 <button class="opcion" onclick="verificarRespuesta(this, 4, false)">Organización Técnica Administrativa Nacional</button>
+                 <button class="opcion" onclick="verificarRespuesta(this, 4, false)">Operación Territorial Aliada Nuclear</button>
+                 <div id="resultado4" class="resultado"></div>
+             </div>
+         </section>
+         <footer>
+             <p>Proyecto Educativo - Historia y Geopolítica</p>
+         </footer>
+     </div>
+     <script src="script.js"></script>
+ </body>
+           </html>
