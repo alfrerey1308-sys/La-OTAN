@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fdd835;
+}
+
+.subtitulo {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.contenido {
+    display: grid;
+    gap: 20px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #fdd835;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateX(10px);
+}
+
+h2 {
+    color: #fdd835;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.numero {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fdd835;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #fdd835;
+    color: #1e3c72;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #fff176;
+}
+
+/* ESTILOS DEL CUESTIONARIO */
+.quiz-section {
+    margin-top: 40px;
+    background: rgba(0,0,0,0.2);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.pregunta {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.pregunta p {
+    margin-bottom: 12px;
+}
+
+.opcion {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    text-align: left;
+}
+
+.opcion:hover {
+    background: rgba(253, 216, 53, 0.2);
+    border-color: #fdd835;
+}
+
+.correcta {
+    background: #2ecc71 !important;
+    border-color: #2ecc71;
+}
+
+.incorrecta {
+    background: #e74c3c !important;
+    border-color: #e74c3c;
+}
+
+.resultado {
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    opacity: 0.7;
+}
