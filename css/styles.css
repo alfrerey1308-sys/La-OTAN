@@ -85,7 +85,7 @@ button:hover {
     background: #fff176;
 }
 
-/* ESTILOS DEL CUESTIONARIO */
+/* --- ESTILOS DEL CUESTIONARIO --- */
 .quiz-section {
     margin-top: 40px;
     background: rgba(0,0,0,0.2);
@@ -97,10 +97,6 @@ button:hover {
     margin-bottom: 25px;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.pregunta p {
-    margin-bottom: 12px;
 }
 
 .opcion {
@@ -120,12 +116,14 @@ button:hover {
 
 .correcta {
     background: #2ecc71 !important;
-    border-color: #2ecc71;
+    border-color: #2ecc71 !important;
+    color: white !important;
 }
 
 .incorrecta {
     background: #e74c3c !important;
-    border-color: #e74c3c;
+    border-color: #e74c3c !important;
+    color: white !important;
 }
 
 .resultado {
